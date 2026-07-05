@@ -199,19 +199,21 @@ p {
 }
 
 .nav-logo .logo-mark {
-  width: 28px;
-  height: 28px;
-  border: 2px solid var(--accent);
+  width: 30px;
+  height: 30px;
+  border: 2px solid transparent;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.65rem;
-  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-family: var(--font-heading);
   color: var(--accent);
-  font-weight: 600;
-  letter-spacing: 0.02em;
+  font-weight: 700;
   flex-shrink: 0;
+  background: linear-gradient(var(--bg), var(--bg)) padding-box,
+              linear-gradient(135deg, var(--accent-grad-1), var(--accent-grad-2)) border-box;
+  box-shadow: 0 0 12px var(--accent-dim);
 }
 
 .nav-logo .accent {
@@ -1776,9 +1778,9 @@ p {
   }
 
   .nav-logo .logo-mark {
-    width: 24px;
-    height: 24px;
-    font-size: 0.55rem;
+    width: 26px;
+    height: 26px;
+    font-size: 0.6rem;
   }
 }
 
