@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Quotes — Man of Vitality</title>
+  <meta name="description" content="The most powerful quotes from Imran Khan on discipline, health, struggle, dreams, and never giving up.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">M</span>
+        Man of <span class="accent">Vitality</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+      </label>
+      <div class="nav-overlay"></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="diet.html">Diet</a></li>
+        <li><a href="exercise.html">Exercise</a></li>
+        <li><a href="fasting.html">Fasting</a></li>
+        <li><a href="mindset.html">Mindset</a></li>
+        <li><a href="age-ranges.html">Ages</a></li>
+        <li><a href="quotes.html" class="active">Quotes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Quotes</p>
+      <h1>The <span class="accent">Quotes</span></h1>
+      <p class="lead">Words to carry with you every day. On discipline, struggle, dreams, and the refusal to give up.</p>
+    </div>
+  </section>
+
+  <section class="section pt-0">
+    <div class="container">
+      <div class="quote-card reveal">
+        <span class="quote-badge struggle">Struggle</span>
+        <blockquote>Never give up, no matter how hard life gets, no matter how much pain you feel. Pain will eventually subside, nothing remains forever, so keep going and don't give up.</blockquote>
+        <cite>— Imran Khan</cite>
+      </div>
+
+      <div class="quote-card quote-card-alt reveal">
+        <span class="quote-badge struggle">Struggle</span>
+        <blockquote>The human body is made to struggle. When you bring organs into a state of stress, they function better than before.</blockquote>
+        <cite>— Imran Khan</cite>
+      </div>
+
+      <div class="quote-card reveal">
+        <span class="quote-badge dreams">Dreams</span>
+        <blockquote>Compromise for your dream, but NEVER compromise on your dream.</blockquote>
+        <cite>— Imran Khan</cite>
+      </div>
+
+      <div class="quote-card quote-card-alt reveal">
+        <span class="quote-badge discipline">Discipline</span>
+        <blockquote>Struggle develops in you a fighting spirit, and that fighting spirit makes you a winner.</blockquote>
+        <cite>— Imran Khan</cite>
+      </div>
+
+      <div class="quote-card reveal">
+        <span class="quote-badge success">Success</span>
+        <blockquote>Success is not final, failure is not fatal: it is the courage to continue that counts.</blockquote>
+        <cite>— Imran Khan</cite>
+      </div>
+
+      <div class="quote-card quote-card-alt reveal">
+        <span class="quote-badge discipline">Discipline</span>
+        <blockquote>The hardest part is to convince yourself that you can do something. Once that's done, everything else follows.</blockquote>
+        <cite>— Imran Khan</cite>
+      </div>
+
+      <div class="quote-card reveal">
+        <span class="quote-badge success">Success</span>
+        <blockquote>With faith, discipline, and selfless devotion to duty, there is nothing worthwhile that you cannot achieve.</blockquote>
+        <cite>— Imran Khan</cite>
+      </div>
+
+      <div class="quote-card quote-card-alt reveal">
+        <span class="quote-badge dreams">Dreams</span>
+        <blockquote>I don't believe in taking right decisions. I take decisions and then make them right.</blockquote>
+        <cite>— Imran Khan</cite>
+      </div>
+
+      <div class="quote-card reveal">
+        <span class="quote-badge discipline">Discipline</span>
+        <blockquote>The more you study, the more you realize how ignorant you are.</blockquote>
+        <cite>— Imran Khan</cite>
+      </div>
+
+      <div class="quote-card quote-card-alt reveal">
+        <span class="quote-badge struggle">Struggle</span>
+        <blockquote>If I woke up and there is no challenge in my life, I would think it's the end of my life.</blockquote>
+        <cite>— Imran Khan</cite>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-quote">"With faith, discipline, and selfless devotion to duty, there is nothing worthwhile that you cannot achieve."</p>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="diet.html">Diet</a>
+        <a href="exercise.html">Exercise</a>
+        <a href="fasting.html">Fasting</a>
+        <a href="mindset.html">Mindset</a>
+        <a href="age-ranges.html">Ages</a>
+        <a href="quotes.html">Quotes</a>
+      </div>
+      <p>Come back tomorrow. Stay disciplined.</p>
+      <p class="footer-motto">Man of Vitality</p>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

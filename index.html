@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Man of Vitality — Discipline, Health & Mindset</title>
+  <meta name="description" content="The lifestyle, discipline, diet, and mindset of Imran Khan at 73 — a daily reminder of what it means to live with purpose.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">M</span>
+        Man of <span class="accent">Vitality</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+      </label>
+      <div class="nav-overlay"></div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="diet.html">Diet</a></li>
+        <li><a href="exercise.html">Exercise</a></li>
+        <li><a href="fasting.html">Fasting</a></li>
+        <li><a href="mindset.html">Mindset</a></li>
+        <li><a href="age-ranges.html">Ages</a></li>
+        <li><a href="quotes.html">Quotes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-watermark">73</div>
+    <div class="hero-glow"></div>
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">At 73. Still unstoppable.</span>
+        <h1>The discipline of a <span class="accent">lifetime</span></h1>
+      </div>
+      <div class="hero-quote fade-in fade-in-delay-1">
+        "The human body is made to struggle. When you bring organs into a state of stress, they function better than before."
+        <cite>— Imran Khan</cite>
+      </div>
+      <p class="lead fade-in fade-in-delay-2" style="margin:0 auto;">
+        This is a record of what keeps a man extraordinary at 73. Not luck. Not genetics.
+        Decades of discipline, a deliberate diet, daily exercise, regular fasting, and a mind
+        that refuses to seek comfort. Come back. Read. Remember.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">The Pillars</span>
+        <h2>What makes a man <span class="accent">vital</span></h2>
+        <p>Six pillars. One philosophy. A lifetime of practice.</p>
+      </div>
+
+      <div class="card-grid">
+        <a href="diet.html" class="nav-card reveal">
+          <div class="card-icon">&#127858;</div>
+          <h3>The Diet</h3>
+          <p>High-protein, whole foods — morning porridge to light dinners. Superfoods, no shortcuts.</p>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="exercise.html" class="nav-card reveal">
+          <div class="card-icon">&#127947;</div>
+          <h3>The Exercise</h3>
+          <p>Daily, non-negotiable. Bike, barbell, weights. Compound movements for strength at any age.</p>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="fasting.html" class="nav-card reveal">
+          <div class="card-icon">&#9200;</div>
+          <h3>The Fasting</h3>
+          <p>Regular fasting triggers autophagy — the body's natural regeneration system.</p>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="mindset.html" class="nav-card reveal">
+          <div class="card-icon">&#10024;</div>
+          <h3>The Mindset</h3>
+          <p>"Struggle develops a fighting spirit." Mental fitness, routine, and the refusal to coast.</p>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="age-ranges.html" class="nav-card reveal">
+          <div class="card-icon">&#128197;</div>
+          <h3>Age Ranges</h3>
+          <p>How his principles apply at every stage of your life — from your 20s to your 70s and beyond.</p>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="quotes.html" class="nav-card reveal">
+          <div class="card-icon">&#128172;</div>
+          <h3>The Quotes</h3>
+          <p>Words to carry with you — on discipline, dreams, struggle, and never giving up.</p>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-quote">"Never give up, no matter how hard life gets. Pain will eventually subside."</p>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="diet.html">Diet</a>
+        <a href="exercise.html">Exercise</a>
+        <a href="fasting.html">Fasting</a>
+        <a href="mindset.html">Mindset</a>
+        <a href="age-ranges.html">Ages</a>
+        <a href="quotes.html">Quotes</a>
+      </div>
+      <p>Come back tomorrow. Stay disciplined.</p>
+      <p class="footer-motto">Man of Vitality</p>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
